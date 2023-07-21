@@ -1,0 +1,12 @@
+#creating resource as pod and name of the pord as nginx ========image as nginx ====== and image name was nginx 
+# docker run -p 80:80 nginx ==> pull image from docker hub and create container
+kind: pod
+apiVersion: v1
+metadata:
+  name: nginx
+spec:
+  containers:
+  - image: nginx
+    name: nginx
+    ports:
+    - containerPort: 80
